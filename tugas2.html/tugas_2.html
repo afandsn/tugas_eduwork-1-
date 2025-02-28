@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-screen-lg w-full mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold">Brand</div>
+            <button id="menu-toggle" class="md:hidden text-gray-700">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="menu" class="hidden md:flex space-x-4">
+                <a class="text-gray-700 hover:text-gray-900" href="#">Header</a>
+                <a class="text-gray-700 hover:text-gray-900" href="#">Biodata</a>
+                <a class="text-gray-700 hover:text-gray-900" href="#">Portofolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-12">
+        <div class="max-w-screen-lg w-full mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl font-bold mb-4">Selamat Datang di Profile Saya</h1>
+                <p class="text-gray-700 mb-4">Jika ingin lebih lanjut dapat mengunjungi link di bawah.</p>
+                <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" href="#">Pelajari Lebih Lanjut</a>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                <img class="rounded shadow-md w-full max-w-md mx-auto" src="https://web.rupa.ai/wp-content/uploads/2023/07/aruna3619_An_interesting_gamer-style_profile_picture_showcasing_ed93193e-000a-4846-86a6-93c5e865d2eb.png" alt="Gambar Header">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="bg-white shadow-md py-12 mt-8">
+        <div class="max-w-screen-lg w-full mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-semibold">Nama Lengkap</h3>
+                    <p class="text-gray-700">arif</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Pendidikan</h3>
+                    <p class="text-gray-700">manajemen</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Pekerjaan</h3>
+                    <p class="text-gray-700">student</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">No Handphone</h3>
+                    <p class="text-gray-700">---</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Hobi</h3>
+                    <p class="text-gray-700">Membaca, Coding</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Alamat</h3>
+                    <p class="text-gray-700">nganjuk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="bg-white shadow-md py-12 mt-8">
+        <div class="max-w-screen-lg w-full mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Portofolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img class="rounded shadow-md w-full max-w-md mx-auto mb-4" src="https://storage.googleapis.com/a1aa/image/nw84nz-4CIx5zv4v2cbtdqLvp7KxYal9EIPgkcOyrO0.jpg" alt="Proyek 1">
+                    <h3 class="text-xl font-semibold">Proyek 1</h3>
+                    <p class="text-gray-700">Deskripsi proyek 1.</p>
+                </div>
+                <div class="text-center">
+                    <img class="rounded shadow-md w-full max-w-md mx-auto mb-4" src="https://storage.googleapis.com/a1aa/image/WjKQislK7RZTkG3vo0zYD5u_-btLKQymS0JHNK4vwjY.jpg" alt="Proyek 2">
+                    <h3 class="text-xl font-semibold">Proyek 2</h3>
+                    <p class="text-gray-700">Deskripsi proyek 2.</p>
+                </div>
+                <div class="text-center">
+                    <img class="rounded shadow-md w-full max-w-md mx-auto mb-4" src="https://storage.googleapis.com/a1aa/image/B0WBr4UvEuzAImZirzCcp1aJb6l7HMkTgQECbNLMpoI.jpg" alt="Proyek 3">
+                    <h3 class="text-xl font-semibold">Proyek 3</h3>
+                    <p class="text-gray-700">Deskripsi proyek 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="proses.js"></script>
+</body>
+</html>
