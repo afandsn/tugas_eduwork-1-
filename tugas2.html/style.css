@@ -22,7 +22,7 @@ body {
 }
 
 .navbar .menu a {
-    margin: 10px 15px;
+    margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-size: 1rem;
@@ -42,12 +42,14 @@ body {
 }
 
 .header-content {
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .header h1 {
     font-size: 2.5rem;
+    padding: 0 30px;
     margin-bottom: 10px;
+    margin-left: auto;
 }
 
 .header p {
