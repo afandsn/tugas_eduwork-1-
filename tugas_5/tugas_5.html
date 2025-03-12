@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Saya</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome (Ikon) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="G:\My
+    Drive\tugas_eduwork-1-\tugas_5\style_5.css />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3">
+      <a class="navbar-brand text-white fw-bold" href="#">My <i>Profile</i></a>
+      <button
+        class="navbar-toggler border-0 text-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Produk Section -->
+    <section class="container text-center py-5">
+      <h2>Produk Kami</h2>
+      <select id="categoryFilter" class="form-select w-50 mx-auto mb-3">
+        <option value="all">Semua Kategori</option>
+        <option value="elektronik">Elektronik</option>
+        <option value="fashion">Fashion</option>
+        <option value="makanan">Makanan</option>
+      </select>
+      <div id="productContainer" class="row"></div>
+    </section>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="G:\My Drive\tugas_eduwork-1-\tugas_5\tugas_5.js"></script>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Saya</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome (Ikon) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .hover-effect:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+      }
+      .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+      }
+
+      .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5); /* Efek transparan */
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary px-3">
+      <a class="navbar-brand text-white fw-bold" href="#"
+        >My <i style="color: rgb(255, 157, 10)">Profile</i></a
+      >
+
+      <button
+        class="navbar-toggler border-0 text-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        style="outline: none; box-shadow: none"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <!-- Header dengan Carousel -->
+    <header class="container-fluid text-center py-5">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div
+            class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100"
+          >
+            <h1 class="text-white fw-bold" style="color: aliceblue">
+              Selamat Datang di Profil Saya
+            </h1>
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="https://teknoscaff.com/wp-content/uploads/2024/01/17.-Proyek-Pembangunan-Infrastruktur-Kota-Masa-Depan-Teknoscaff-1.jpg"
+              class="d-block w-100 rounded"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://lynxx.co/wp-content/uploads/2020/06/Slide_Software.jpg"
+              class="d-block w-100 rounded"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://th.bing.com/th/id/OIP.cQ1GQayB628e1wETPBAjpQHaEP?w=626&h=358&rs=1&pid=ImgDetMain"
+              class="d-block w-100 rounded"
+              alt="Slide 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section class="container text-center py-5">
+      <h2 style="color: rgb(0, 0, 0); margin-bottom: 30px">About Me</h2>
+      <div class="row">
+        <div class="col-md-4 hover-effect">
+          <h3>
+            <i
+              class="bi bi-person"
+              style="font-size: 30px"
+              onmouseover="this.style.color='blue'"
+              onmouseout="this.style.color='orange'"
+            ></i>
+          </h3>
+          <p>Arif</p>
+        </div>
+        <div class="col-md-4 hover-effect">
+          <h3>
+            <i
+              class="bi bi-mortarboard"
+              style="font-size: 30px"
+              onmouseover="this.style.color='blue'"
+              onmouseout="this.style.color='orange'"
+            ></i>
+          </h3>
+          <p>Manajemen</p>
+        </div>
+        <div class="col-md-4 hover-effect">
+          <h3>
+            <i
+              class="bi bi-briefcase"
+              style="font-size: 30px"
+              onmouseover="this.style.color='blue'"
+              onmouseout="this.style.color='orange'"
+            ></i>
+          </h3>
+          <p>Collage Student</p>
+        </div>
+        <div class="col-md-4 hover-effect">
+          <h3>
+            <i
+              class="bi bi-telephone"
+              style="font-size: 30px"
+              onmouseover="this.style.color='blue'"
+              onmouseout="this.style.color='orange'"
+            ></i>
+          </h3>
+          <p>----</p>
+        </div>
+        <div class="col-md-4 hover-effect">
+          <h3>
+            <i
+              class="bi bi-heart"
+              style="font-size: 30px"
+              onmouseover="this.style.color='blue'"
+              onmouseout="this.style.color='orange'"
+            ></i>
+          </h3>
+          <p>Membaca, Coding</p>
+        </div>
+        <div class="col-md-4 hover-effect">
+          <h3>
+            <i
+              class="bi bi-geo-alt"
+              style="font-size: 30px"
+              onmouseover="this.style.color='blue'"
+              onmouseout="this.style.color='orange'"
+            ></i>
+          </h3>
+          <p>Nganjuk</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="container text-center py-5">
+      <h2 style="margin-bottom: 30px">Portofolio</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            class="img-fluid rounded hover-effect"
+            src="https://storage.googleapis.com/a1aa/image/nw84nz-4CIx5zv4v2cbtdqLvp7KxYal9EIPgkcOyrO0.jpg"
+            alt="Proyek 1"
+            data-bs-toggle="modal"
+            data-bs-target="#modal1"
+          />
+          <h3 style="margin-top: 20px">Proyek 1</h3>
+          <p>Deskripsi proyek 1.</p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="img-fluid rounded hover-effect"
+            src="https://storage.googleapis.com/a1aa/image/WjKQislK7RZTkG3vo0zYD5u_-btLKQymS0JHNK4vwjY.jpg"
+            alt="Proyek 2"
+            data-bs-toggle="modal"
+            data-bs-target="#modal2"
+          />
+          <h3 style="margin-top: 20px">Proyek 2</h3>
+          <p>Deskripsi proyek 2.</p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="img-fluid rounded hover-effect"
+            src="https://storage.googleapis.com/a1aa/image/B0WBr4UvEuzAImZirzCcp1aJb6l7HMkTgQECbNLMpoI.jpg"
+            alt="Proyek 3"
+            data-bs-toggle="modal"
+            data-bs-target="#modal3"
+          />
+          <h3 style="margin-top: 20px">Proyek 3</h3>
+          <p>Deskripsi proyek 3.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Proyek 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">Detail proyek 1.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Proyek 2</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">Detail proyek 2.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Proyek 3</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">Detail proyek 3.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
