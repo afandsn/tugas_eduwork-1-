@@ -1,23 +1,16 @@
 <?php
-$host = "localhost"; 
-$user = "root"; 
-$pass = ""; 
-$db = "toko_online"; 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "ecommerce_db";
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-if (!$conn) {
-    die("Koneksi gagal coba lagi: " . mysqli_connect_error());
-}
-
-$sql = "SHOW TABLES LIKE 'produk'";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-    echo "Tabel produk ditemukan!";
+// Cek koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 } else {
-    echo "Tabel produk tidak ditemukan!";
+    echo "Koneksi berhasil!";
 }
-
-mysqli_close($conn);
 ?>
